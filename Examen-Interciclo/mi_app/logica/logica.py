@@ -29,6 +29,8 @@ def predecir_imagen(img_url):
         return valor_maximo, 'Padece Autismo'
     elif indice_maximo == 1:
         return valor_maximo, 'No padece Autismo'
+    elif indice_maximo == 2:
+        return valor_maximo-2, 'Padece Autismo'
 
 
 def cargar_rnn(nombreArchivoModelo, nombreArchivoPesos):
